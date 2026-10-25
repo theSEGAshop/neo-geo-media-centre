@@ -41,6 +41,10 @@ The player is built into the Foundry. See [docs/HOWTO.txt](docs/HOWTO.txt) for t
 
 Only needed if you want to change the player itself. It uses [ngdevkit](https://github.com/dciabrin/ngdevkit) and its `15-sound-adpcmb` example. See [player/README.md](player/README.md).
 
+## Disclaimer
+
+Use at your own risk. This is a free hobby project, provided as it is, with no warranty of any kind. It has been tested on a NeoSD Pro and in MAME, but I can’t promise it will work on every console or flash cart, and I’m not responsible for any damage, lost data or other problems from using it. Keep a backup of your SD card before trying a new file. Neo Geo is a trademark of its owners; this project is not affiliated with SNK.
+
 ## Credits
 
 - Player built with **ngdevkit** by Damien Ciabrini and contributors (LGPL-3.0-or-later).
