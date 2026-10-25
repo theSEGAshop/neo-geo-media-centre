@@ -91,7 +91,7 @@ The package is laid out like a MAME folder:
 
 1. Unzip UNZIP-INTO-MAME-FOLDER_<title>.zip INTO your MAME folder (the
    one with mame.exe) and let it merge. It places:
-       roms\neogeo\ngmc.zip     the cartridge (leave it zipped)
+       roms\ngmc.zip           the cartridge (leave it zipped)
        myhash\neogeo.xml        its software list entry
        run-ngmc.bat             double-click to start
 2. Double-click run-ngmc.bat. It runs:
