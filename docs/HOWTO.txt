@@ -1,0 +1,147 @@
+NEO GEO MEDIA CENTRE: HOW TO USE THE FOUNDRY
+=============================================
+
+WHAT YOU NEED
+-------------
+- The Foundry: neogeo-media-centre-foundry.html, opened in a modern
+  browser (Edge, Chrome or Firefox). Nothing to install. Nothing is
+  uploaded: your music is converted inside the browser.
+- Music: MP3, WAV, FLAC, OGG, M4A or AAC, up to 64 tracks.
+- To play it, one of:
+    * a NeoSD (or similar) flash cart in a real Neo Geo, or
+    * the MAME emulator with a MAME-format neogeo.zip BIOS.
+
+
+STEP 1: ADD YOUR MUSIC
+----------------------
+1. Open the Foundry. Drag audio files onto the page, or click the feed
+   slot to choose them.
+2. Rename tracks in the ledger (names are upper-case, up to 32
+   characters). Use the arrows to reorder and Remove to drop a track.
+3. The ROM space gauge shows how much of the 16 MB cartridge you have
+   used. "Auto-fit" picks the best sample rate that fits everything, so
+   you can simply add music until the gauge is full. To choose by hand,
+   turn it off and set a rate per track (8,000 to 55,500 Hz). Lower
+   rates fit more music: halving the rate halves the space.
+4. Leave "Even out loud and quiet tracks" ticked unless you want the
+   original levels.
+5. Press Preview to hear a track as the Neo Geo's YM2610 chip will
+   play it. Only one track plays at a time.
+
+Tip: you can save your work with "Save project" and carry on later with
+"Load project".
+
+
+STEP 2: CHOOSE A LOOK
+---------------------
+The "Cartridge look" panel restyles the Foundry and is baked into the
+cartridge.
+
+1. Click a skin. Twelve are on every cartridge, and the Neo Geo's
+   options page has a SKIN row to switch between them. "Start on"
+   chooses which one the cartridge begins with.
+2. The small screen is a live copy of the Neo Geo screen. "Play demo"
+   plays your list on it, "Try screensaver" shows the saver, "Show
+   splash" plays the start-up splash.
+3. Screen title: up to 20 characters at the top of the screen.
+4. Animation: Calm, Normal or Lively.
+5. Screensaver: Off, Dim, Partial dim, Bouncing title, Starfield, Warp
+   starfield, Game of Life, Glyph rain, Light show, Gold lettering or
+   Surprise me, plus how long the console waits before it starts. Any
+   button wakes the screen.
+6. "Screen filter" at the top of the page adds a CRT look to the
+   Foundry itself. It does not change the cartridge.
+
+Your choices are remembered in your browser.
+
+
+STEP 3: BUILD
+-------------
+In the Export panel:
+
+1. Set the Cartridge title and Maker if you like. A flash cart shows
+   them in its game list.
+2. Press "Build .neo" for a flash cart, or "Build MAME set" for MAME.
+
+The Advanced section holds bare ADPCM-B audio files and a V-ROM image,
+for people who want the raw data.
+
+
+STEP 4A: ON A NEOSD FLASH CART
+------------------------------
+1. Copy the .neo file to your SD card, in its own folder.
+2. Put the card in the NeoSD, switch on, and choose the game from the
+   menu.
+
+Work from a copy of the card's contents and keep a backup. Do not update
+the flash cart's firmware on the same day as trying a new file, so that
+if something goes wrong it is easy to trace.
+
+
+STEP 4B: IN MAME
+----------------
+The package is laid out like a MAME folder:
+
+1. Unzip UNZIP-INTO-MAME-FOLDER_<title>.zip INTO your MAME folder (the
+   one with mame.exe) and let it merge. It places:
+       roms\neogeo\ngmc.zip     the cartridge (leave it zipped)
+       myhash\neogeo.xml        its software list entry
+       run-ngmc.bat             double-click to start
+2. Double-click run-ngmc.bat. It runs:
+       mame neogeo ngmc -rompath roms -hashpath myhash
+3. The Neo Geo BIOS (neogeo.zip, MAME format) must already be in
+   roms\ in the MAME folder.
+
+To try a new playlist, build again and unzip the new package over the
+old one.
+
+
+CONTROLS
+--------
+On a Neo Geo (stick or pad):
+
+  Choose a track ........ Up / Down
+  Previous / next ....... Left / Right
+  Play highlighted ...... A
+  Stop .................. B
+  Repeat all on/off ..... C
+  Shuffle on/off ........ D
+  Menu / options ........ Start
+
+In MAME (player 1 defaults; click the MAME window first):
+
+  Up / Down / Left / Right ... arrow keys
+  A ... Left Ctrl     B ... Left Alt     C ... Space     D ... Left Shift
+  Start ... 1
+
+Press Tab in MAME and choose Input (this Machine) to check or change a
+key.
+
+
+TROUBLESHOOTING
+---------------
+* MAME lists "approximately matches" games
+    It does not know ngmc. Check myhash\neogeo.xml exists, and start
+    with run-ngmc.bat from the MAME folder.
+* Checkerboard screen in MAME
+    The zip was loaded as a raw cartridge. Use the command in step 4B.
+* "sfix.sfix, sm1.sm1 NOT FOUND"
+    Your BIOS zip uses FinalBurn names. Use a MAME-format neogeo.zip.
+* A track is silent or the wrong speed
+    Preview it in the Foundry first, then check its sample rate.
+* Ctrl or Alt does nothing in MAME
+    Click the window, or rebind the button in the Tab menu.
+* The flash cart does not show the game
+    Check the .neo file is in its own folder on the card, and try a
+    fresh copy of the file.
+
+
+CREDITS AND LICENCES
+--------------------
+Player built with ngdevkit (Damien Ciabrin and contributors).
+Fonts: IM Fell English SC and Libre Baskerville, SIL Open Font License
+1.1; Special Elite, Apache License 2.0.
+Sample pack music: public-domain recordings from Musopen (see the
+pack's CREDITS.txt).
+Neo Geo is a trademark of its owners; this project is not affiliated
+with SNK.
