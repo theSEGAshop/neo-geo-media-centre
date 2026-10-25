@@ -27,7 +27,7 @@ The player is built into the Foundry. See [docs/HOWTO.txt](docs/HOWTO.txt) for t
 
 ## Try it quickly
 
-`ngmc-sample-pack-01.zip` (Download `ngmc-sample-pack-01.zip` from the [Releases page](https://github.com/thesegashop/neo-geo-media-centre/releases)) holds four public-domain classical recordings and a ready-made Foundry project. Unzip it, open the Foundry, use **Load project**, and press **Build .neo**.
+The sample pack holds four public-domain classical recordings and a ready-made Foundry project. Download `ngmc-sample-pack-01.zip` from the [Releases page](https://github.com/thesegashop/neo-geo-media-centre/releases), unzip it, open the Foundry, use **Load project**, and press **Build .neo**.
 
 ## Folders
 
@@ -40,10 +40,6 @@ The player is built into the Foundry. See [docs/HOWTO.txt](docs/HOWTO.txt) for t
 ## Building the player from source (optional)
 
 Only needed if you want to change the player itself. It uses [ngdevkit](https://github.com/dciabrin/ngdevkit) and its `15-sound-adpcmb` example. See [player/README.md](player/README.md).
-
-## Disclaimer
-
-Use at your own risk. This is a free hobby project, provided as it is, with no warranty of any kind. It has been tested on a NeoSD Pro and in MAME, but I can’t promise it will work on every console or flash cart, and I’m not responsible for any damage, lost data or other problems from using it. Keep a backup of your SD card before trying a new file. Neo Geo is a trademark of its owners; this project is not affiliated with SNK.
 
 ## Credits
 
