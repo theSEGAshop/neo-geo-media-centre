@@ -27,7 +27,7 @@ The player is built into the Foundry. See [docs/HOWTO.txt](docs/HOWTO.txt) for t
 
 ## Try it quickly
 
-`ngmc-sample-pack-01.zip` (if included with your download) holds four public-domain classical recordings and a ready-made Foundry project. Unzip it, open the Foundry, use **Load project**, and press **Build .neo**.
+`ngmc-sample-pack-01.zip` (download it from the Releases page) holds four public-domain classical recordings and a ready-made Foundry project. Unzip it, open the Foundry, use **Load project**, and press **Build .neo**.
 
 ## Folders
 
