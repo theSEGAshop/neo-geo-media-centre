@@ -10,7 +10,7 @@ Free and made in spare time. If you enjoy it and would like to chip in, there is
 
 ## How it works
 
-1. Open `foundry/neogeo-media-centre-foundry.html` in a modern browser (Edge, Chrome or Firefox).
+1. Open the Foundry: use the **Open the Foundry** button on the [project web page](https://thesegashop.github.io/neo-geo-media-centre/), or download `foundry/neogeo-media-centre-foundry.html` (on its GitHub page, press the download arrow at the top right of the code box) and open the saved file in a modern browser (Edge, Chrome or Firefox). Clicking the file in GitHub's file list only shows its code, not the app.
 2. Drop in your music (MP3, WAV, FLAC, OGG, M4A, AAC). Up to 64 tracks, 16 MB of cartridge audio in total. The Foundry fits your tracks to the space automatically.
 3. Name and order the tracks, pick a look (twelve skins) and a screensaver, and listen to a preview of how the Neo Geo's sound chip will play each track.
 4. Press **Build .neo** for a NeoSD flash cart, or **Build MAME set** to run it in the MAME emulator.
