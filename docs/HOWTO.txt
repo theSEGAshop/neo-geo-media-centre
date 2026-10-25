@@ -3,9 +3,16 @@ NEO GEO MEDIA CENTRE: HOW TO USE THE FOUNDRY
 
 WHAT YOU NEED
 -------------
-- The Foundry: neogeo-media-centre-foundry.html, opened in a modern
-  browser (Edge, Chrome or Firefox). Nothing to install. Nothing is
-  uploaded: your music is converted inside the browser.
+- The Foundry, opened in a modern browser (Edge, Chrome or Firefox).
+  Nothing to install. Nothing is uploaded: your music is converted
+  inside the browser. Two ways to open it:
+    * online: the "Open the Foundry" button on the project web page
+      (https://thesegashop.github.io/neo-geo-media-centre/)
+    * offline: download neogeo-media-centre-foundry.html from the repo's
+      foundry folder (the download arrow at the top right of the code
+      box on GitHub) and double-click the saved file. It is a single
+      file and needs nothing else.
+  Clicking the file in GitHub's file list only shows its code.
 - Music: MP3, WAV, FLAC, OGG, M4A or AAC, up to 64 tracks.
 - To play it, one of:
     * a NeoSD (or similar) flash cart in a real Neo Geo, or
